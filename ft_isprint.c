@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 14:36:32 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/12 17:53:08 by fbelando         ###   ########.fr       */
+/*   Created: 2023/09/12 16:54:57 by fbelando          #+#    #+#             */
+/*   Updated: 2023/09/12 17:53:30 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_isprint(int c)
 {
-	if (c >= '0' && c <= '9')
+	if (c >= 40 && c <= 176)
 		return (1);
 	else
 		return (0);
@@ -25,7 +25,7 @@ int	main(void)
 {
 	int	c;
 
-	c = '9';
-	printf("%d\n", ft_isdigit(c));
+	c = 40;
+	printf("%d\n", ft_isprint(c));
 	return (0);
-}	
+}
