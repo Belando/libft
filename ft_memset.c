@@ -6,7 +6,7 @@
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:23:42 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/12 18:38:49 by fbelando         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:05:41 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@ void	*ft_memset(void *str, int c, size_t len)
 	return (str);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "hola hola";
 
 	ft_memset(&str, 'p', 3);
 	printf("%s\n", str);
 	return (0);
-}
+}*/

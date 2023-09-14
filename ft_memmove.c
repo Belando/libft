@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 14:36:32 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/14 15:00:26 by fbelando         ###   ########.fr       */
+/*   Created: 2023/09/14 15:05:52 by fbelando          #+#    #+#             */
+/*   Updated: 2023/09/14 15:17:24 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <string.h>
 #include "libft.h"
+#include <stdio.h>
 
-int	ft_isdigit(int c)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
-}
 
-/*int	main(void)
-{
-	int	c;
-
-	c = '9';
-	printf("%d\n", ft_isdigit(c));
-	return (0);
-}*/	

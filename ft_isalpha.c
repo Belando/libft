@@ -6,7 +6,7 @@
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 14:04:23 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/12 17:52:30 by fbelando         ###   ########.fr       */
+/*   Updated: 2023/09/14 14:59:41 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	c;
 
 	c = 'A';
 	printf("%d\n", ft_isalpha(c));
 	return (0);
-}
+}*/

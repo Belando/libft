@@ -6,7 +6,7 @@
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 16:45:20 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/12 17:52:51 by fbelando         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:00:07 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	c;
 
 	c = 128;
 	printf("%d\n", ft_isascii(c));
 	return (0);
-}
+}*/

@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 14:36:32 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/14 15:00:26 by fbelando         ###   ########.fr       */
+/*   Created: 2023/09/14 14:02:24 by fbelando          #+#    #+#             */
+/*   Updated: 2023/09/14 15:03:07 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
-int	ft_isdigit(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
-		return (0);
+	size_t	i;
+
+	i = 0;
+	while (i < n)
+	{
+		((unsigned char *)s)[i] = '0';
+		i++;
+	}
+	if (n == 0)
+		return ;
+	return ;
 }
 
 /*int	main(void)
 {
-	int	c;
+	char	str[9] = "hola hola";
 
-	c = '9';
-	printf("%d\n", ft_isdigit(c));
+	ft_bzero(&str, 9);
+	printf("%s\n", str);
 	return (0);
-}*/	
+}*/

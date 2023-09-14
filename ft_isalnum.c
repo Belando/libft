@@ -6,7 +6,7 @@
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 15:39:13 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/12 17:52:10 by fbelando         ###   ########.fr       */
+/*   Updated: 2023/09/14 14:58:33 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	c;
 
 	c = ';';
 	printf("%d\n", ft_isalnum(c));
 	return (0);
-}
+}*/

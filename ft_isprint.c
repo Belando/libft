@@ -6,7 +6,7 @@
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 16:54:57 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/12 17:53:30 by fbelando         ###   ########.fr       */
+/*   Updated: 2023/09/14 15:01:03 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	c;
 
 	c = 40;
 	printf("%d\n", ft_isprint(c));
 	return (0);
-}
+}*/
