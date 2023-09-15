@@ -23,11 +23,11 @@ int	ft_strlen(const char *str)
 	return (count);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	*str;
 
 	str = "open mid";
 	printf("%lu\n", ft_strlen(str));
 	return (0);
-}			
+}*/		
