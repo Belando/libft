@@ -1,30 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 14:04:23 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/14 14:59:41 by fbelando         ###   ########.fr       */
+/*   Created: 2023/09/18 17:10:31 by fbelando          #+#    #+#             */
+/*   Updated: 2023/09/18 17:44:27 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	else
-		return (0);
+	char	*t;
+	size_t	i;
+
+	t = (char *)s;
+	i = 0;
+	c = c % 256;
+	while (t[i] != '\0' && t[i] != c)
+		i++;
+	if (t[i] == c)
+		return (&t[i]);
+	return (NULL);
 }
 
 /*int	main(void)
 {
-	int	c;
+	const char	*str = "Hola qué tal?";
+	char		target = '?';
 
-	c = 'A';
-	printf("%d\n", ft_isalpha(c));
+	printf("%c", *ft_strchr(str, target));
 	return (0);
 }*/
