@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/21 13:39:17 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/21 13:39:26 by fbelando         ###   ########.fr       */
+/*   Created: 2023/09/22 15:06:26 by fbelando          #+#    #+#             */
+/*   Updated: 2023/09/22 15:10:51 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
-	char	*dup;
-
-	i = ft_strlen(s) + 1;
-	dup = (char *)malloc(i);
-	if (dup != NULL)
-		ft_strlcpy(dup, s, i);
-	return (dup);
+	write(fd, &c, 1);
 }
+
+/*int	main(void)
+{
+	int	c = 'h';
+
+	ft_putchar_fd (c, 1);
+	return (0);
+}*/
