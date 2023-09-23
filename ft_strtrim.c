@@ -21,17 +21,17 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	if (!s1 || !set)
 		return (NULL);
-	while (s1[start] && ft_strchr(set, s1[start]) != '\0')
+	while (s1[start] && ft_strchr(set, s1[start]) != NULL)
 		start++;
-	while (end > start && ft_strchr(set, s1[end - 1]) != '\0')
+	while (end > start && ft_strchr(set, s1[end - 1]) != NULL)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
 
 /*int	main(void)
 {
-	char const	*str = "holad";
-	char const	*str2 = "hdios";
+	char const	*str = "aaaahaaaliggutthfytia";
+	char const	*str2 = "ah";
 
 	printf("%s", ft_strtrim(str, str2));
 	return (0);
