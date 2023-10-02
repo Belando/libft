@@ -16,27 +16,27 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	s;
 	size_t	d;
-	size_t	dstlen;
 
 	d = 0;
 	s = 0;
 	while (dst[d] && d < dstsize)
 		d++;
-	dstlen = d;
-	if (dstsize == 0 || d == dstsize)
+	if (d < dstsize)
 	{
-		while (src[s])
+		while (src[s] && d < dstsize - 1)
+		{
+			dst[d] = src[s];
 			s++;
-		return (d + s);
+			d++;
+		}
+		dst[d] = '\0';
 	}
-	while (src[s] && d < dstsize - 1)
+	while (src[s])
 	{
-		dst[d] = src[s];
 		s++;
 		d++;
 	}
-	dst[d] = '\0';
-	return (dstlen + ft_strlen(src));
+	return (d);
 }
 
 /*Se utiliza para concatenar dos cadenas de caracteres,
