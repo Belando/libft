@@ -20,6 +20,9 @@ int	ft_isascii(int c)
 		return (0);
 }
 
+/* Detecta si un entero es un carácter ASCII imprimible o de control 
+y devuelve un 1, sino un 0*/
+
 /*int	main(void)
 {
 	int	c;

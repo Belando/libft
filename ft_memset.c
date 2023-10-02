@@ -25,6 +25,10 @@ void	*ft_memset(void *str, int c, size_t len)
 	return (str);
 }
 
+/* Para llenar un bloque de memoria str, con un entero c 
+y una longitud len. Mientras que i sea menor que len en el puntero de str 
+en la posición i igualamos al entero c*/
+
 /*int	main(void)
 {
 	char	str[] = "hola hola";

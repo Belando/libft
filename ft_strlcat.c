@@ -27,7 +27,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	{
 		while (src[s])
 			s++;
-		return (dstlen + s);
+		return (d + s);
 	}
 	while (src[s] && d < dstsize - 1)
 	{
@@ -36,10 +36,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		d++;
 	}
 	dst[d] = '\0';
-	while (src[s])
-		s++;
-	return (dstlen + s);
+	return (dstlen + ft_strlen(src));
 }
+
+/*Se utiliza para concatenar dos cadenas de caracteres,
+con un limite de caracteres, evitando desbordamientos de bufer.
+Mientras que la posicion de dst sea menor que dstsize, iteramos.
+Si dst es 0 o d es igual a dstsize cuenta caracteres de s y devuelve
+la longitud de dstlen + la de src(no hay espacio para concatenar)
+SI entra, entra en un bucle mientras que src no sea nulo y d sea igual 
+al penultimo caracter de dstsize, dejando espacio para el nulo
+y devuelve dstlen + s*/
 
 // int	main(void)
 // {

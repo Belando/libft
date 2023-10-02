@@ -22,6 +22,9 @@ int	ft_isalnum(int c)
 		return (0);
 }
 
+/* Detecta si un entero es alfanumérico, devuelve 1 si lo es y 0 sino.
+*/
+
 /*int	main(void)
 {
 	int	c;

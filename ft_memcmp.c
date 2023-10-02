@@ -30,6 +30,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
+/* Se utiliza para comparar dos bloques de memoria hasta un 
+numero max de bytes n. Valor positivo si s1 > s2. Sino 0.*/
+
 /*int	main(void)
 {
 	const void *s1 = "Hola";

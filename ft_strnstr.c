@@ -34,6 +34,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
+/* Busca una subcadena de caracteres needle en la cadena haystack hasta
+una longitud maxima len.Si no hay needle se devuelve haystack, el bucle
+entra mientras */
+
 /*int	main(void)
 {
 	char	*haystack = "YEEEEEEEApa";

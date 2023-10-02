@@ -37,6 +37,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
+/* Copiamos un bloque de memoria desde la posicion src hasta la
+posición dest con un tamaño determinado. Si el desino es mayor 
+que el origen, se empieza a copiar desde la posición de la derecha, 
+para evitar que se superposición.
+en caso contrario se copia desde la izquierda como memcpy */
+
 /*int	main(void)
 {
 	char	dst[] = "adios";

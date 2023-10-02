@@ -27,6 +27,12 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
+/* Busca la primera coincidencia de un carácter c en una cadena de carácteres s,
+si la encuentra devuelve un puntero a la posición, sino devuelve NULL
+Declarar el puntero t de tipo char para tratar a cadena como un array de
+caracteres en vez de una cadena constante, la comprobacion de c es para 
+asegurar que esta en el rango valido de caracteres.*/
+
 /*int	main(void)
 {
 	const char	*str = "Hola qué tal?";

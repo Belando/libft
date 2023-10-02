@@ -20,6 +20,9 @@ int	ft_isprint(int c)
 		return (0);
 }
 
+/* Detecta si un entero es un caracter ASCII imprimible y devuelve un 1 
+y sino un 0 */
+
 /*int	main(void)
 {
 	int	c;

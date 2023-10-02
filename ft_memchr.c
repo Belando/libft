@@ -28,6 +28,10 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
+/* Busca la primera coincidencia de un carácter c en un bloque 
+de memoria, examinando un num determinado de bytes, si la encuentra 
+devuelve un puntero a la posición, sino devuelve NULL*/
+
 /*int	main(void)
 {
 	const void	*str = "Hola";

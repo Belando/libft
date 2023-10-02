@@ -17,7 +17,10 @@ void	ft_bzero(void *s, size_t n)
 	ft_memset(s, 0, n);
 }
 
-/*ft_memset(s, 0, n);*/
+/* Para llenar un bloque de memoria s, con 0
+y una longitud n. Usamos memset con el valor 0 como el int c, el puntero s
+para copiar los 0 y size n*/
+
 /*int	main(void)
 {
 	char	str[9] = "hola hola";

@@ -31,11 +31,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (srcsize);
 }
 
-/*int	main(void)
-{
-	char	dst[] = "hola";
-	char	src[] = "adios";
+/*Se utiliza para copiar una cadena de caracteres en otra ccon un limite max
+de caracteres evitando desbordamientos de bufer, copia hasta el caracter
+nulo o hasta el penúltimo caracter dstsize para colocar nulo al final*/
 
-	ft_strlcpy(dst, src, 4);
+/* int	main(void)
+{
+	char	dst[0] = "";
+	char	src[] = "hola";
+
+	printf("%zu\n", ft_strlcpy(dst, src, 0));
+	printf("%s", dst);
 	return (0);
-}*/
+} */

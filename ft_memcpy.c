@@ -30,6 +30,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+/* Copiamos un bloque de memoria desde la posicion src hasta la posición dest
+con un tamaño n determinado. Se declaran punteros para origen y destino, 
+para asegurarse de que se copian byte a byte. */
 
 /*int	main(void)
 {

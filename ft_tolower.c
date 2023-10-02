@@ -20,6 +20,9 @@ int	ft_tolower(int c)
 		return (c);
 }
 
+/*Se detecta si un entero es mayúscula y se suma 32
+para convertirla en minúscula, sino se devuelve igual*/
+
 /*int	main(void)
 {
 	unsigned char	c;

@@ -22,6 +22,8 @@ int	ft_strlen(const char *str)
 	return (count);
 }
 
+/* Mide la longitud de una cadena de carácteres hasta que llega a valor nulo*/
+
 /*int	main(void)
 {
 	char	*str;

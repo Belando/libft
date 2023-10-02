@@ -20,6 +20,9 @@ int	ft_isalpha(int c)
 		return (0);
 }
 
+/* Detecta si un entero es un alfabético y devuelve un 1 
+y sino un 0 */
+
 /*int	main(void)
 {
 	int	c;

@@ -34,6 +34,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
+/*Se utiliza para comparar dos cadenas de caracteres de manera segura,
+hasta un tamaño n determinado. Bucle n > 0, porque vamos reduciendo.
+Se amacenan en c1 y c2, si es mayor 1, menor -1 igual 0.
+Es el último retorno el que devuelve 0, si llega a final de cadena y
+es n = 1, indica tambien que son iguales*/
+
 /*int	main(int argc, char *argv[])
 {
 	char			*str1 = argv[1];

@@ -31,6 +31,11 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
+/* Busca la utima coincidencia de un carácter c en una cadena de carácteres s,
+si la encuentra devuelve un puntero a la posición, sino devuelve NULL
+A diferencia de strchr, recorremos desde atrás hacia delante, por eso
+necesitamos el strlen de s.*/
+
 /*int	main(void)
 {
 	const char	*str = "Hola qué tal?";
