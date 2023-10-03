@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <limits.h>
 
 int	ft_atoi(const char *str)
 {
@@ -42,6 +40,13 @@ int	ft_atoi(const char *str)
 	}
 	return (negative * n);
 }
+
+/* Convierte una cadena de caracteres en un entero, evitamos del tab 
+hasta el retorno de carro y los espacios iterando, si encontramos simbolos
+y es negativo lo cambiamos y si son numeros, hacemos la conversion 
+Se multiplica n por 10 para desplazar los digitos y se le resta
+el valor ascii de 0. Si el valor es negativo/positivo nos devuelve 0 o -1 
+para indicar error,, ya que es mayor que el mayor int. */
 
 /*int	main(void)
 {

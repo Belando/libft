@@ -23,3 +23,14 @@ char	*ft_strdup(const char *s)
 		ft_strlcpy(dup, s, i);
 	return (dup);
 }
+
+/* Con una cadena de carácteres s, a duplica en un nuevo puntero.
+Ussamos strlen+1 para saber el tamaño y reservar el final de cadena.
+Reservamos la memoria para el duplicado con malloc, si no es nulo,
+hacemos un copy y devolvemos.*/
+
+/*int	main(void)
+{
+	printf("%s", ft_strdup("eeeo"));
+	return (0);
+}*/

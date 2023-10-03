@@ -35,6 +35,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
+/* Debe extraer un substring de una cadena de caracteres, desde una posicion
+ de inicio y una longitud dada. Primero verificamos si la posicion de 
+ comienzo es mayor a la longitud del string. Después verifica si len
+ es mayor a la longitud que necesitamos y la actualiza. Asignamos memoria.
+ Inicializamos la memoria con memset, garantiza que los caracteres no
+ utilizados sean 0. Copiamos desde start+i en sub y añadimos fin de cadena*/
+
 /*int	main(void)
 {
 	char s[] = "yeepa";

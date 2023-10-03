@@ -25,6 +25,6 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	char	*s = "jelou";
 
-	ft_putstr_fd(s, 1);
+	ft_putstr_fd(s, 3);
 	return (0);
 }*/

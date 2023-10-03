@@ -66,7 +66,7 @@ static char	*ft_extract(const char *s, size_t start, size_t end)
 	while (start < end)
 		substring[j++] = s[start++];
 	substring[j] = '\0';
-	return (substring);
+	return (substring); 
 }
 
 char	**ft_split(char const *s, char c)

@@ -34,3 +34,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (cat);
 }
+
+/* Devuelve una cadena de carácteres, uniendo dos cadenas de carácteres
+pasadas como parámetros, las guardamos en cat. Si existen, medimos
+su longitud y reservamos la memoria. Comprobamos en caso de que no
+exista. Si ambos existen, hacemos un cpy de la 1a cadena y luego un
+cat de la 2a sobre la primera, devolvemos nuestro char cat.*/
+
+/*int	main(void)
+{
+	printf("%s", ft_strjoin("avanza", "rapido"));
+	return (0);
+}*/

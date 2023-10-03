@@ -28,6 +28,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, start, end - start));
 }
 
+/*Toma dos cadenas de caracteres, la principal y una set, considerada
+como caracteres de espacio en blanco que deben ser eliminados al principio
+y al final de la principal. Declaramos una variable para el principio.
+Si la posicion start y la busqueda de caracter no es null aumenta start.
+Mientras que end sea mayor que start y la busqueda de caracter desde atras
+no sea null, decrementa el final. Finalmente nos devuelve el substring con
+el tamaño resultante de la diferencia de final y principio*/
+
 /*int	main(void)
 {
 	char const	*str = "aaaahaaaliggutthfytia";
