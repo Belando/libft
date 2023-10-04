@@ -35,6 +35,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
+// static char	*ft_extract(const char *s, size_t start, size_t end)
+// {
+// 	char	*substring;
+// 	size_t	j;
+
+// 	j = 0;
+// 	substring = (char *)malloc((end - start + 1) * sizeof(char));
+// 	if (substring == NULL)
+// 		return (NULL);
+// 	while (start < end)
+// 		substring[j++] = s[start++];
+// 	substring[j] = '\0';
+// 	return (substring); 
+// }
+
 /* Debe extraer un substring de una cadena de caracteres, desde una posicion
  de inicio y una longitud dada. Primero verificamos si la posicion de 
  comienzo es mayor a la longitud del string. Después verifica si len

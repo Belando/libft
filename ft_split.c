@@ -20,6 +20,8 @@ typedef struct s_data
 	size_t	start;
 }		t_data;
 
+/*Es un puntero a un puntero de caracteres. Se utilizará para almacenar las subcadenas resultantes después de dividir la cadena de entrada.*/
+
 static void	ft_free(char **str)
 {
 	size_t	i;
@@ -32,6 +34,8 @@ static void	ft_free(char **str)
 	}
 	free (str);
 }
+
+/* Libera la memoria para una matriz de caracteres. Libera en cada posición i y luego la cadena entera.*/
 
 static size_t	ft_count(const char *s, char c)
 {
@@ -54,20 +58,7 @@ static size_t	ft_count(const char *s, char c)
 	return (count);
 }
 
-static char	*ft_extract(const char *s, size_t start, size_t end)
-{
-	char	*substring;
-	size_t	j;
-
-	j = 0;
-	substring = (char *)malloc((end - start + 1) * sizeof(char));
-	if (substring == NULL)
-		return (NULL);
-	while (start < end)
-		substring[j++] = s[start++];
-	substring[j] = '\0';
-	return (substring); 
-}
+/* Cuenta cuantas subcadenas se pueden obtener diviendo S, con el caracter delimitador C*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -86,7 +77,7 @@ char	**ft_split(char const *s, char c)
 			vars.start = vars.i;
 			while (s[vars.i] && s[vars.i] != c)
 				vars.i++;
-			vars.result[vars.j] = ft_extract(s, vars.start, vars.i);
+			vars.result[vars.j] = ft_substr(s, vars.start, vars.i - vars.start);
 			if (vars.result[vars.j] == NULL)
 				return (ft_free(vars.result), NULL);
 			vars.j++;
