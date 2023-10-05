@@ -23,27 +23,35 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	}
 }
 
-/*int	main(void)
+/*void	del(void *s)
 {
-	t_list	*lst = ft_lstnew("Inicial");
-	t_list	*element2 = ft_lstnew("Mitad");
-	t_list	*element3 = ft_lstnew("Último");
+	free(s);
+}
 
-	lst->next = element2;
-	element2->next = element3;
-	t_list *temp = lst;
-	printf("Before delete:\n");
-	while (temp)
+void a()
+{
+	system("leaks a.out");
+}
+int	main(void)
+{
+	atexit(a);
+	int		i;
+	t_list	*list;
+
+	i = 0;
+	list = ft_lstnew(ft_strdup("creo que es asi"));
+	printf("%s\n", list->content);
+	ft_lstdelone(list, del);
+	while (i < 15)
 	{
-		printf("%s\n", (char *)(temp->content));
-		temp = temp->next;
+		printf("%d", ((char *)list->content)[i]);
+		i++;
 	}
-	lst = element2;
-	printf("After delete: %p\n", (void *)lst);
 	return (0);
 }*/
 
 /* Se utiliza para eliminar un elemento de nuestra lista y liberar la memoria.
 El puntero del es una función que se utilizará para liberar memoria del
 contenido de la lista. se llama a del lst->content para liberar el contenido
-asociada al contenido de la lista. Luego free para liberar la memoria.*/
+asociada al contenido de la lista. Luego free para liberar la memoria.
+La memoria de next no debe liberarse.*/

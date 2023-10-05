@@ -19,7 +19,7 @@ all:	$(NAME)
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-bonus: $(OBJS_B)
+bonus: $(NAME) $(OBJS_B)
 	ar rcs $(NAME) $(OBJS_B)
 
 clean: 

@@ -36,11 +36,22 @@ y libera la memoria */
 	free(content);
 }
 
+void test_leaks()
+{
+	system("leaks a.out");
+}
+
 int	main(void)
 {
-	t_list	*lst = ft_lstnew("Inicial");
-	t_list	*element2 = ft_lstnew("Mitad");
-	t_list	*element3 = ft_lstnew("Último");
+	atexit(test_leaks);
+
+	char *a = ft_strdup("Inicial");
+	char *b = ft_strdup("Second");
+	char *c = ft_strdup("EEEE");
+
+	t_list	*lst = ft_lstnew(a);
+	t_list	*element2 = ft_lstnew(b);
+	t_list	*element3 = ft_lstnew(c);
 
 	lst->next = element2;
 	element2->next = element3;
