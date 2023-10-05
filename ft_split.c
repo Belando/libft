@@ -20,7 +20,9 @@ typedef struct s_data
 	size_t	start;
 }		t_data;
 
-/*Es un puntero a un puntero de caracteres. Se utilizará para almacenar las subcadenas resultantes después de dividir la cadena de entrada.*/
+/*Es un puntero a un puntero de caracteres. 
+Se utilizará para almacenar las subcadenas 
+resultantes después de dividir la cadena de entrada.*/
 
 static void	ft_free(char **str)
 {
@@ -35,7 +37,8 @@ static void	ft_free(char **str)
 	free (str);
 }
 
-/* Libera la memoria para una matriz de caracteres. Libera en cada posición i y luego la cadena entera.*/
+/* Libera la memoria para una matriz de caracteres. 
+Libera en cada posición i y luego la cadena entera.*/
 
 static size_t	ft_count(const char *s, char c)
 {
@@ -58,7 +61,8 @@ static size_t	ft_count(const char *s, char c)
 	return (count);
 }
 
-/* Cuenta cuantas subcadenas se pueden obtener diviendo S, con el caracter delimitador C*/
+/* Cuenta cuantas subcadenas se pueden obtener diviendo S, 
+con el caracter delimitador C*/
 
 char	**ft_split(char const *s, char c)
 {
@@ -88,3 +92,16 @@ char	**ft_split(char const *s, char c)
 	vars.result[vars.j] = NULL;
 	return (vars.result);
 }
+
+/*int	main(void)
+{
+	char	str[] = "El split me vuelve loco";
+
+	char	c = ' ';
+	printf("%s\n", ft_split(str, c)[0]);
+	printf("%s\n", ft_split(str, c)[1]);
+	printf("%s\n", ft_split(str, c)[2]);
+	printf("%s\n", ft_split(str, c)[3]);
+	printf("%s\n", ft_split(str, c)[4]);
+	return (0);
+}*/

@@ -25,3 +25,27 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/*static void	lower_upper(unsigned int i, char *c)
+{
+	static int	index[11] = {0};
+
+	index[i] = 1;
+	if (*c >= 'a' && *c <= 'z')
+		*c = *c - 32;
+	else if (*c >= 'A' && *c <= 'Z')
+		*c = *c + 32;
+}
+
+int	main(void)
+{
+	char	s[] = "StrierI GuApeTon";
+
+	printf("Before: %s\n", s);
+	ft_striteri(s, &lower_upper);
+	printf("After: %s\n", s);
+	return (0);
+}*/
+
+/* Aplica una función f a una cadena de carácteres s. La diferencia con mapi
+es que esta la aplica en la cadena original.*/

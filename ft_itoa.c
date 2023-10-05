@@ -29,6 +29,8 @@ static unsigned int	ft_numlen(int n)
 	return (count);
 }
 
+/* Función auxiliar, para el conteo  */
+
 char	*ft_itoa(int n)
 {
 	unsigned int	len;
@@ -57,3 +59,12 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+
+/*int	main(void)
+{
+	int	n;
+
+	n = 1552;
+	printf("%s", ft_itoa(n));
+	return (0);
+}*/

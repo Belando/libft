@@ -31,3 +31,27 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = 0;
 	return (str);
 }
+
+/*static char	lower_upper(unsigned int i, char c)
+{
+	static int	index[11] = {0};
+
+	index[i] = 1;
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	else if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	else
+		return (c);
+}
+
+int	main(void)
+{
+	char	s[] = "MaPi Me Da PrObLeMas";
+
+	printf("%s", ft_strmapi(s, &lower_upper));
+	return (0);
+}*/
+/* Se usa para aplicar una función f a cada carácter
+de una cadena de carácteres s, creando una nueva.
+creamos *str donde almacenamos la nueva cadena*/
