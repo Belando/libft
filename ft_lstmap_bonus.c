@@ -40,7 +40,18 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_lst);
 }
 
-/* Se utiliza para crear una nueva lista enlazada a partir de los elementos de
-la ya existente. Aplicando una funcion f a cada elemento para transformarlos y 
-crear nuevos elementos en la lista. La función del solo se usa si ocurre algún
-error durante la creación de la nueva lista.*/
+/* Crea una nueva lista enlazada a partir
+de elementos de la ya existente. Aplica f a cada elemento para
+transformarlos y crear nuevos elementos en la lista.
+Creamos lista nueva, nodo nuevo y content. 
+Aplicamos al contenido la función f.
+Si content es null significa que ha habido un error con la funcion f, 
+limpiamos con lstclear y devolvemos null para indicar el error. 
+en el nodo nuevo, creamos content con lstnew. 
+Si la creación del nuevo nodo falla. 
+usamos del para borrar el contenido y lstclear para liberar 
+la memoria de la nueva lista y devolvemos null para indicar el error. 
+Finalmente si no ha habido ningun error 
+utilizamos lstadd_back para agregar el nuevo nodo al final
+y actualizamos next de la lista original para que apunte al siguiente nodo.
+Finalmente devolvemos la lista nueva.*/
