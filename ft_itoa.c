@@ -68,3 +68,8 @@ char	*ft_itoa(int n)
 	printf("%s", ft_itoa(n));
 	return (0);
 }*/
+
+/* Toma un entero y devuelve una cadena de caracteres que representa a ese numero. Almacenamos el resultado 
+de la auxiliar en len. Puntero a result, para el resultado. y unsigned int para el valor absoluto.
+Toma el digito a la derecha usando la operacion modulo y le suma el '0' para convertir en caracter y lo asigna en la posicion len-1
+despues divide entre 10 para eliminar ese digito y moverse a la izquierda y decrementamos.*/
