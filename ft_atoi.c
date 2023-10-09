@@ -6,7 +6,7 @@
 /*   By: fbelando <fbelando@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 18:55:07 by fbelando          #+#    #+#             */
-/*   Updated: 2023/09/19 19:34:19 by fbelando         ###   ########.fr       */
+/*   Updated: 2023/10/09 16:15:29 by fbelando         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,11 @@ Se multiplica n por 10 para desplazar los digitos y se le resta
 el valor ascii de 0. Si el valor es negativo/positivo nos devuelve 0 o -1 
 para indicar error,, ya que es mayor que el mayor int. */
 
-/*int	main(void)
+int	main(void)
 {
 	char	*ptr = "123422222222222222567";
 
 	printf("%d\n", ft_atoi(ptr));
 	printf("%d\n", atoi (ptr));
 	return (0);
-}*/
+}
